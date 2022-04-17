@@ -1,0 +1,6 @@
+secrets.toml
+.DS_Store
+.vscode
+.AppleDouble
+.LSOverride
+.env
