@@ -1,3 +1,4 @@
+import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
 
@@ -7,7 +8,8 @@ def create_df(table, root):
   df = pd.read_sql(table, engine)                              
   return df
 
-#Funktion, die einem Dataframe die Verspätung in Sekunden hinzufügt sowie Namen für die Haltestellen
+#Funktion, die einem großen Dataframe erstellt, aus den Tabellen der Datenbank
+@st.cache
 def df_edit(root):
     #Zuerst erstellt man aus allen Tabellen der Datenbank jeweils einen Dataframe
     df0 = create_df('Fahrtanfragen', root)
