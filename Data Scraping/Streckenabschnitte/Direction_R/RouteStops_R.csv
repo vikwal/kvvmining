@@ -1,0 +1,493 @@
+LineRef;Station;Direction;Route;StopSeq
+21001;de:08212:13;R;Neureut-Heide - Durlach;1
+21001;de:08212:7009;R;Neureut-Heide - Durlach;2
+21001;de:08212:12;R;Neureut-Heide - Durlach;3
+21001;de:08212:8;R;Neureut-Heide - Durlach;4
+21001;de:08212:5;R;Neureut-Heide - Durlach;5
+21001;de:08212:7003;R;Neureut-Heide - Durlach;6
+21001;de:08212:39;R;Neureut-Heide - Durlach;7
+21001;de:08212:1004;R;Neureut-Heide - Durlach;8
+21001;de:08212:1003;R;Neureut-Heide - Durlach;9
+21001;de:08212:1002;R;Neureut-Heide - Durlach;10
+21001;de:08212:1001;R;Neureut-Heide - Durlach;11
+21001;de:08212:6;R;Neureut-Heide - Durlach;12
+21001;de:08212:7;R;Neureut-Heide - Durlach;13
+21001;de:08212:9;R;Neureut-Heide - Durlach;14
+21001;de:08212:10;R;Neureut-Heide - Durlach;15
+21001;de:08212:11;R;Neureut-Heide - Durlach;16
+21001;de:08212:16;R;Neureut-Heide - Durlach;17
+21001;de:08212:17;R;Neureut-Heide - Durlach;18
+21001;de:08212:18;R;Neureut-Heide - Durlach;19
+21002;de:08212:240;R;Siemensallee - Wolfartsweier;1
+21002;de:08212:239;R;Siemensallee - Wolfartsweier;2
+21002;de:08212:238;R;Siemensallee - Wolfartsweier;3
+21002;de:08212:237;R;Siemensallee - Wolfartsweier;4
+21002;de:08212:525;R;Siemensallee - Wolfartsweier;5
+21002;de:08212:524;R;Siemensallee - Wolfartsweier;6
+21002;de:08212:523;R;Siemensallee - Wolfartsweier;7
+21002;de:08212:522;R;Siemensallee - Wolfartsweier;8
+21002;de:08212:521;R;Siemensallee - Wolfartsweier;9
+21002;de:08212:1101;R;Siemensallee - Wolfartsweier;10
+21002;de:08212:41;R;Siemensallee - Wolfartsweier;11
+21002;de:08212:39;R;Siemensallee - Wolfartsweier;12
+21002;de:08212:37;R;Siemensallee - Wolfartsweier;13
+21002;de:08212:37;R;Siemensallee - Wolfartsweier;14
+21002;de:08212:61;R;Siemensallee - Wolfartsweier;15
+21002;de:08212:62;R;Siemensallee - Wolfartsweier;16
+21002;de:08212:508;R;Siemensallee - Wolfartsweier;17
+21002;de:08212:64;R;Siemensallee - Wolfartsweier;18
+21002;de:08212:65;R;Siemensallee - Wolfartsweier;19
+21002;de:08212:6218;R;Siemensallee - Wolfartsweier;20
+21002;de:08212:5003;R;Siemensallee - Wolfartsweier;21
+21002;de:08212:91;R;Siemensallee - Wolfartsweier;22
+21002;de:08212:89;R;Siemensallee - Wolfartsweier;23
+21002;de:08212:98;R;Siemensallee - Wolfartsweier;24
+21002;de:08212:74;R;Siemensallee - Wolfartsweier;25
+21002;de:08212:1013;R;Siemensallee - Wolfartsweier;26
+21002;de:08212:1012;R;Siemensallee - Wolfartsweier;27
+21002;de:08212:1011;R;Siemensallee - Wolfartsweier;28
+21002;de:08212:1002;R;Siemensallee - Wolfartsweier;29
+21002;de:08212:1001;R;Siemensallee - Wolfartsweier;30
+21002;de:08212:6;R;Siemensallee - Wolfartsweier;31
+21002;de:08212:7;R;Siemensallee - Wolfartsweier;32
+21002;de:08212:9;R;Siemensallee - Wolfartsweier;33
+21002;de:08212:10;R;Siemensallee - Wolfartsweier;34
+21002;de:08212:11;R;Siemensallee - Wolfartsweier;35
+21002;de:08212:4499;R;Siemensallee - Wolfartsweier;36
+21002;de:08212:4497;R;Siemensallee - Wolfartsweier;37
+21002;de:08212:4495;R;Siemensallee - Wolfartsweier;38
+21002;de:08212:4494;R;Siemensallee - Wolfartsweier;39
+21002;de:08212:4493;R;Siemensallee - Wolfartsweier;40
+21002;de:08212:4496;R;Siemensallee - Wolfartsweier;41
+21002;de:08212:4492;R;Siemensallee - Wolfartsweier;42
+21002;de:08212:4500;R;Siemensallee - Wolfartsweier;43
+21003;de:08212:308;R;Daxlanden/Rappenwört - Rintheim;1
+21003;de:08212:307;R;Daxlanden/Rappenwört - Rintheim;2
+21003;de:08212:306;R;Daxlanden/Rappenwört - Rintheim;3
+21003;de:08212:305;R;Daxlanden/Rappenwört - Rintheim;4
+21003;de:08212:304;R;Daxlanden/Rappenwört - Rintheim;5
+21003;de:08212:303;R;Daxlanden/Rappenwört - Rintheim;6
+21003;de:08212:302;R;Daxlanden/Rappenwört - Rintheim;7
+21003;de:08212:315;R;Daxlanden/Rappenwört - Rintheim;8
+21003;de:08212:201;R;Daxlanden/Rappenwört - Rintheim;9
+21003;de:08212:51;R;Daxlanden/Rappenwört - Rintheim;10
+21003;de:08212:45;R;Daxlanden/Rappenwört - Rintheim;11
+21003;de:08212:44;R;Daxlanden/Rappenwört - Rintheim;12
+21003;de:08212:41;R;Daxlanden/Rappenwört - Rintheim;13
+21003;de:08212:39;R;Daxlanden/Rappenwört - Rintheim;14
+21003;de:08212:37;R;Daxlanden/Rappenwört - Rintheim;15
+21003;de:08212:37;R;Daxlanden/Rappenwört - Rintheim;16
+21003;de:08212:61;R;Daxlanden/Rappenwört - Rintheim;17
+21003;de:08212:62;R;Daxlanden/Rappenwört - Rintheim;18
+21003;de:08212:63;R;Daxlanden/Rappenwört - Rintheim;19
+21003;de:08212:91;R;Daxlanden/Rappenwört - Rintheim;20
+21003;de:08212:89;R;Daxlanden/Rappenwört - Rintheim;21
+21003;de:08212:98;R;Daxlanden/Rappenwört - Rintheim;22
+21003;de:08212:84;R;Daxlanden/Rappenwört - Rintheim;23
+21003;de:08212:83;R;Daxlanden/Rappenwört - Rintheim;24
+21003;de:08212:85;R;Daxlanden/Rappenwört - Rintheim;25
+21003;de:08212:80;R;Daxlanden/Rappenwört - Rintheim;26
+21003;de:08212:3;R;Daxlanden/Rappenwört - Rintheim;27
+21003;de:08212:401;R;Daxlanden/Rappenwört - Rintheim;28
+21003;de:08212:402;R;Daxlanden/Rappenwört - Rintheim;29
+21003;de:08212:402;R;Daxlanden/Rappenwört - Rintheim;30
+21003;de:08212:310;R;Daxlanden/Rappenwört - Rintheim;31
+21003;de:08212:313;R;Daxlanden/Rappenwört - Rintheim;32
+21003;de:08212:314;R;Daxlanden/Rappenwört - Rintheim;33
+21004;de:08212:611;R;Oberreut - Waldstadt;1
+21004;de:08212:610;R;Oberreut - Waldstadt;2
+21004;de:08212:609;R;Oberreut - Waldstadt;3
+21004;de:08212:608;R;Oberreut - Waldstadt;4
+21004;de:08212:607;R;Oberreut - Waldstadt;5
+21004;de:08212:606;R;Oberreut - Waldstadt;6
+21004;de:08212:605;R;Oberreut - Waldstadt;7
+21004;de:08212:604;R;Oberreut - Waldstadt;8
+21004;de:08212:603;R;Oberreut - Waldstadt;9
+21004;de:08212:602;R;Oberreut - Waldstadt;10
+21004;de:08212:40;R;Oberreut - Waldstadt;11
+21004;de:08212:39;R;Oberreut - Waldstadt;12
+21004;de:08212:37;R;Oberreut - Waldstadt;13
+21004;de:08212:37;R;Oberreut - Waldstadt;14
+21004;de:08212:61;R;Oberreut - Waldstadt;15
+21004;de:08212:71;R;Oberreut - Waldstadt;16
+21004;de:08212:85;R;Oberreut - Waldstadt;17
+21004;de:08212:3;R;Oberreut - Waldstadt;18
+21004;de:08212:401;R;Oberreut - Waldstadt;19
+21004;de:08212:402;R;Oberreut - Waldstadt;20
+21004;de:08212:403;R;Oberreut - Waldstadt;21
+21004;de:08212:404;R;Oberreut - Waldstadt;22
+21004;de:08212:405;R;Oberreut - Waldstadt;23
+21004;de:08212:406;R;Oberreut - Waldstadt;24
+21004;de:08212:407;R;Oberreut - Waldstadt;25
+21004;de:08212:408;R;Oberreut - Waldstadt;26
+21004;de:08212:409;R;Oberreut - Waldstadt;27
+21004;de:08212:3017;R;Oberreut - Waldstadt;28
+21004;de:08212:411;R;Oberreut - Waldstadt;29
+21004;de:08212:3012;R;Oberreut - Waldstadt;30
+21005;de:08212:501;R;Rheinhafen - Durlach Bf;1
+21005;de:08212:58;R;Rheinhafen - Durlach Bf;2
+21005;de:08212:51;R;Rheinhafen - Durlach Bf;3
+21005;de:08212:503;R;Rheinhafen - Durlach Bf;4
+21005;de:08212:504;R;Rheinhafen - Durlach Bf;5
+21005;de:08212:505;R;Rheinhafen - Durlach Bf;6
+21005;de:08212:603;R;Rheinhafen - Durlach Bf;7
+21005;de:08212:507;R;Rheinhafen - Durlach Bf;8
+21005;de:08212:508;R;Rheinhafen - Durlach Bf;9
+21005;de:08212:62;R;Rheinhafen - Durlach Bf;10
+21005;de:08212:61;R;Rheinhafen - Durlach Bf;11
+21005;de:08212:61;R;Rheinhafen - Durlach Bf;12
+21005;de:08212:71;R;Rheinhafen - Durlach Bf;13
+21005;de:08212:85;R;Rheinhafen - Durlach Bf;14
+21005;de:08212:622;R;Rheinhafen - Durlach Bf;15
+21005;de:08212:623;R;Rheinhafen - Durlach Bf;16
+21005;de:08212:624;R;Rheinhafen - Durlach Bf;17
+21005;de:08212:7;R;Rheinhafen - Durlach Bf;18
+21005;de:08212:9;R;Rheinhafen - Durlach Bf;19
+21005;de:08212:10;R;Rheinhafen - Durlach Bf;20
+21005;de:08212:802;R;Rheinhafen - Durlach Bf;21
+22010;de:08215:1157;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;1
+22010;de:08215:1156;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;2
+22010;de:08215:1155;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;3
+22010;de:08215:1154;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;4
+22010;de:08215:1153;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;5
+22010;de:08215:1152;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;6
+22010;de:08215:1151;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;7
+22010;de:08215:1133;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;8
+22010;de:08215:1132;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;9
+22010;de:08215:1131;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;10
+22010;de:08215:1123;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;11
+22010;de:08215:1122;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;12
+22010;de:08215:1120;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;13
+22010;de:08215:1124;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;14
+22010;de:08212:1115;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;15
+22010;de:08212:1114;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;16
+22010;de:08212:1111;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;17
+22010;de:08212:1110;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;18
+22010;de:08212:1106;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;19
+22010;de:08212:1105;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;20
+22010;de:08212:1104;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;21
+22010;de:08212:1103;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;22
+22010;de:08212:1101;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;23
+22010;de:08212:41;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;24
+22010;de:08212:39;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;25
+22010;de:08212:1004;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;26
+22010;de:08212:1003;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;27
+22010;de:08212:1011;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;28
+22010;de:08212:1012;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;29
+22010;de:08212:1013;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;30
+22010;de:08212:74;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;31
+22010;de:08212:98;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;32
+22010;de:08212:89;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;33
+22010;de:08212:1201;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;34
+22010;de:08212:1206;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;35
+22010;de:08212:1207;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;36
+22010;de:08212:1208;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;37
+22010;de:08212:1209;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;38
+22010;de:08212:1210;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;39
+22010;de:08215:1220;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;40
+22010;de:08215:1221;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;41
+22010;de:08215:1223;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;42
+22010;de:08215:1231;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;43
+22010;de:08215:1235;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;44
+22010;de:08215:1237;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;45
+22010;de:08215:1241;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;46
+22010;de:08215:1301;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;47
+22010;de:08215:1302;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;48
+22010;de:08215:1303;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;49
+22010;de:08215:1304;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;50
+22010;de:08235:9711;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;51
+22010;de:08235:9558;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;52
+21012;de:08215:1501;R;Rheinstetten - Spöck;1
+21012;de:08215:1500;R;Rheinstetten - Spöck;2
+21012;de:08215:220;R;Rheinstetten - Spöck;3
+21012;de:08215:219;R;Rheinstetten - Spöck;4
+21012;de:08215:218;R;Rheinstetten - Spöck;5
+21012;de:08215:217;R;Rheinstetten - Spöck;6
+21012;de:08215:215;R;Rheinstetten - Spöck;7
+21012;de:08215:214;R;Rheinstetten - Spöck;8
+21012;de:08215:213;R;Rheinstetten - Spöck;9
+21012;de:08215:212;R;Rheinstetten - Spöck;10
+21012;de:08215:210;R;Rheinstetten - Spöck;11
+21012;de:08212:209;R;Rheinstetten - Spöck;12
+21012;de:08212:206;R;Rheinstetten - Spöck;13
+21012;de:08212:205;R;Rheinstetten - Spöck;14
+21012;de:08212:204;R;Rheinstetten - Spöck;15
+21012;de:08212:203;R;Rheinstetten - Spöck;16
+21012;de:08212:201;R;Rheinstetten - Spöck;17
+21012;de:08212:51;R;Rheinstetten - Spöck;18
+21012;de:08212:45;R;Rheinstetten - Spöck;19
+21012;de:08212:44;R;Rheinstetten - Spöck;20
+21012;de:08212:41;R;Rheinstetten - Spöck;21
+21012;de:08212:39;R;Rheinstetten - Spöck;22
+21012;de:08212:1004;R;Rheinstetten - Spöck;23
+21012;de:08212:1003;R;Rheinstetten - Spöck;24
+21012;de:08212:1002;R;Rheinstetten - Spöck;25
+21012;de:08212:1001;R;Rheinstetten - Spöck;26
+21012;de:08212:6;R;Rheinstetten - Spöck;27
+21012;de:08212:7;R;Rheinstetten - Spöck;28
+21012;de:08212:626;R;Rheinstetten - Spöck;29
+21012;de:08212:402;R;Rheinstetten - Spöck;30
+21012;de:08212:403;R;Rheinstetten - Spöck;31
+21012;de:08212:404;R;Rheinstetten - Spöck;32
+21012;de:08212:231;R;Rheinstetten - Spöck;33
+21012;de:08212:3102;R;Rheinstetten - Spöck;34
+21012;de:08212:233;R;Rheinstetten - Spöck;35
+21012;de:08212:3301;R;Rheinstetten - Spöck;36
+21012;de:08212:3013;R;Rheinstetten - Spöck;37
+21012;de:08215:1902;R;Rheinstetten - Spöck;38
+21012;de:08215:1903;R;Rheinstetten - Spöck;39
+21012;de:08215:32030;R;Rheinstetten - Spöck;40
+21012;de:08215:32031;R;Rheinstetten - Spöck;41
+21012;de:08215:1906;R;Rheinstetten - Spöck;42
+21012;de:08215:32033;R;Rheinstetten - Spöck;43
+21012;de:08215:32704;R;Rheinstetten - Spöck;44
+21012;de:08215:32743;R;Rheinstetten - Spöck;45
+21012;de:08215:33079;R;Rheinstetten - Spöck;46
+21012;de:08215:32052;R;Rheinstetten - Spöck;47
+21012;de:08215:32296;R;Rheinstetten - Spöck;48
+22014;de:08212:1201;R;Karlsruhe - Heilbronn - Öhringen;1
+22014;de:08212:89;R;Karlsruhe - Heilbronn - Öhringen;2
+22014;de:08212:98;R;Karlsruhe - Heilbronn - Öhringen;3
+22014;de:08212:74;R;Karlsruhe - Heilbronn - Öhringen;4
+22014;de:08212:1013;R;Karlsruhe - Heilbronn - Öhringen;5
+22014;de:08212:1012;R;Karlsruhe - Heilbronn - Öhringen;6
+22014;de:08212:1011;R;Karlsruhe - Heilbronn - Öhringen;7
+22014;de:08212:1002;R;Karlsruhe - Heilbronn - Öhringen;8
+22014;de:08212:1001;R;Karlsruhe - Heilbronn - Öhringen;9
+22014;de:08212:6;R;Karlsruhe - Heilbronn - Öhringen;10
+22014;de:08212:7;R;Karlsruhe - Heilbronn - Öhringen;11
+22014;de:08212:9;R;Karlsruhe - Heilbronn - Öhringen;12
+22014;de:08212:10;R;Karlsruhe - Heilbronn - Öhringen;13
+22014;de:08212:802;R;Karlsruhe - Heilbronn - Öhringen;14
+22014;de:08212:1521;R;Karlsruhe - Heilbronn - Öhringen;15
+22014;de:08212:1525;R;Karlsruhe - Heilbronn - Öhringen;16
+22014;de:08215:1526;R;Karlsruhe - Heilbronn - Öhringen;17
+22014;de:08215:1530;R;Karlsruhe - Heilbronn - Öhringen;18
+22014;de:08215:1531;R;Karlsruhe - Heilbronn - Öhringen;19
+22014;de:08215:1541;R;Karlsruhe - Heilbronn - Öhringen;20
+22014;de:08215:1543;R;Karlsruhe - Heilbronn - Öhringen;21
+22014;de:08215:1548;R;Karlsruhe - Heilbronn - Öhringen;22
+22014;de:08215:1550;R;Karlsruhe - Heilbronn - Öhringen;23
+22014;de:08215:1551;R;Karlsruhe - Heilbronn - Öhringen;24
+22014;de:08215:1553;R;Karlsruhe - Heilbronn - Öhringen;25
+22014;de:08215:1554;R;Karlsruhe - Heilbronn - Öhringen;26
+22014;de:08215:1555;R;Karlsruhe - Heilbronn - Öhringen;27
+22014;de:08215:1556;R;Karlsruhe - Heilbronn - Öhringen;28
+22014;de:08215:1557;R;Karlsruhe - Heilbronn - Öhringen;29
+22014;de:08215:32831;R;Karlsruhe - Heilbronn - Öhringen;30
+22014;de:08215:32617;R;Karlsruhe - Heilbronn - Öhringen;31
+22014;de:08215:1561;R;Karlsruhe - Heilbronn - Öhringen;32
+22014;de:08215:32092;R;Karlsruhe - Heilbronn - Öhringen;33
+22014;de:08215:32618;R;Karlsruhe - Heilbronn - Öhringen;34
+22014;de:08215:32093;R;Karlsruhe - Heilbronn - Öhringen;35
+22014;de:08125:1110;R;Karlsruhe - Heilbronn - Öhringen;36
+22014;de:08125:5404;R;Karlsruhe - Heilbronn - Öhringen;37
+22015;de:07334:1738;R;Wörth - Pforzheim;1
+22015;de:07334:1739;R;Wörth - Pforzheim;2
+22015;de:07334:1736;R;Wörth - Pforzheim;3
+22015;de:07334:1735;R;Wörth - Pforzheim;4
+22015;de:07334:1734;R;Wörth - Pforzheim;5
+22015;de:07334:1714;R;Wörth - Pforzheim;6
+22015;de:07334:1731;R;Wörth - Pforzheim;7
+22015;de:07334:1723;R;Wörth - Pforzheim;8
+22015;de:07334:1721;R;Wörth - Pforzheim;9
+22015;de:08212:1700;R;Wörth - Pforzheim;10
+22015;de:08212:107;R;Wörth - Pforzheim;11
+22015;de:08212:106;R;Wörth - Pforzheim;12
+22015;de:08212:105;R;Wörth - Pforzheim;13
+22015;de:08212:104;R;Wörth - Pforzheim;14
+22015;de:08212:103;R;Wörth - Pforzheim;15
+22015;de:08212:101;R;Wörth - Pforzheim;16
+22015;de:08212:58;R;Wörth - Pforzheim;17
+22015;de:08212:51;R;Wörth - Pforzheim;18
+22015;de:08212:45;R;Wörth - Pforzheim;19
+22015;de:08212:44;R;Wörth - Pforzheim;20
+22015;de:08212:41;R;Wörth - Pforzheim;21
+22015;de:08212:39;R;Wörth - Pforzheim;22
+22015;de:08212:1004;R;Wörth - Pforzheim;23
+22015;de:08212:1003;R;Wörth - Pforzheim;24
+22015;de:08212:1002;R;Wörth - Pforzheim;25
+22015;de:08212:1001;R;Wörth - Pforzheim;26
+22015;de:08212:6;R;Wörth - Pforzheim;27
+22015;de:08212:7;R;Wörth - Pforzheim;28
+22015;de:08212:9;R;Wörth - Pforzheim;29
+22015;de:08212:10;R;Wörth - Pforzheim;30
+22015;de:08212:802;R;Wörth - Pforzheim;31
+22015;de:08212:1510;R;Wörth - Pforzheim;32
+22015;de:08212:1521;R;Wörth - Pforzheim;33
+22015;de:08212:1525;R;Wörth - Pforzheim;34
+22015;de:08212:1600;R;Wörth - Pforzheim;35
+22015;de:08215:1601;R;Wörth - Pforzheim;36
+22015;de:08215:2008;R;Wörth - Pforzheim;37
+22015;de:08215:1634;R;Wörth - Pforzheim;38
+22015;de:08215:1616;R;Wörth - Pforzheim;39
+22015;de:08215:1617;R;Wörth - Pforzheim;40
+22015;de:08215:1627;R;Wörth - Pforzheim;41
+22015;de:08215:1619;R;Wörth - Pforzheim;42
+22015;de:08236:1794;R;Wörth - Pforzheim;43
+22015;de:08236:1793;R;Wörth - Pforzheim;44
+22015;de:08236:1792;R;Wörth - Pforzheim;45
+22015;de:08236:1795;R;Wörth - Pforzheim;46
+22015;de:08236:1791;R;Wörth - Pforzheim;47
+22015;de:08236:1717;R;Wörth - Pforzheim;48
+22015;de:08231:50;R;Wörth - Pforzheim;49
+22011;de:08215:1157;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;1
+22011;de:08215:1156;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;2
+22011;de:08215:1155;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;3
+22011;de:08215:1154;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;4
+22011;de:08215:1153;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;5
+22011;de:08215:1152;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;6
+22011;de:08215:1151;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;7
+22011;de:08215:1133;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;8
+22011;de:08215:1132;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;9
+22011;de:08215:1131;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;10
+22011;de:08215:1123;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;11
+22011;de:08215:1122;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;12
+22011;de:08215:1120;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;13
+22011;de:08215:1124;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;14
+22011;de:08212:1115;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;15
+22011;de:08212:1114;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;16
+22011;de:08212:1111;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;17
+22011;de:08212:1110;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;18
+22011;de:08212:1106;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;19
+22011;de:08212:1105;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;20
+22011;de:08212:1104;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;21
+22011;de:08212:1103;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;22
+22011;de:08212:1101;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;23
+22011;de:08212:41;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;24
+22011;de:08212:39;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;25
+22011;de:08212:1004;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;26
+22011;de:08212:1003;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;27
+22011;de:08212:1011;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;28
+22011;de:08212:1012;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;29
+22011;de:08212:1013;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;30
+22011;de:08212:74;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;31
+22011;de:08212:98;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;32
+22011;de:08212:89;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;33
+22011;de:08212:1201;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;34
+22011;de:08212:1206;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;35
+22011;de:08212:1207;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;36
+22011;de:08212:1208;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;37
+22011;de:08212:1209;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;38
+22011;de:08212:1210;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;39
+22011;de:08215:1220;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;40
+22011;de:08215:1221;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;41
+22011;de:08215:1223;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;42
+22011;de:08215:1231;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;43
+22011;de:08215:1235;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;44
+22011;de:08215:1237;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;45
+22011;de:08215:1241;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;46
+22011;de:08215:1401;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;47
+22011;de:08215:1402;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;48
+22011;de:08215:1411;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;49
+22011;de:08215:1403;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;50
+22011;de:08215:1404;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;51
+22011;de:08215:1406;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;52
+22011;de:08215:1408;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;53
+22011;de:08215:1409;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Langensteinbach - Ittersbach;54
+22012;de:08212:501;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;1
+22012;de:08212:58;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;2
+22012;de:08212:51;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;3
+22012;de:08212:45;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;4
+22012;de:08212:44;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;5
+22012;de:08212:41;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;6
+22012;de:08212:39;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;7
+22012;de:08212:37;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;8
+22012;de:08212:37;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;9
+22012;de:08212:61;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;10
+22012;de:08212:62;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;11
+22012;de:08212:63;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;12
+22012;de:08212:91;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;13
+22012;de:08212:1201;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;14
+22012;de:08215:1221;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;15
+22012;de:08215:1223;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;16
+22012;de:08215:1231;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;17
+22012;de:08215:1241;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;18
+22012;de:08215:1401;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;19
+22012;de:08215:1402;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;20
+22012;de:08215:1411;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;21
+22012;de:08215:1403;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;22
+22012;de:08215:1404;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;23
+22012;de:08215:1406;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;24
+22012;de:08215:1408;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;25
+22012;de:08215:1409;R;Hochstetten - Leopoldshafen - Eggenstein - Neureut - Karlsruhe - Ettlingen - Busenbach - Marxzell - Bad Herrenalb;26
+22031;de:08212:90;R;Karlsruhe - Odenheim;1
+22031;de:08212:801;R;Karlsruhe - Odenheim;2
+22031;de:08215:1853;R;Karlsruhe - Odenheim;3
+22031;de:08215:1854;R;Karlsruhe - Odenheim;4
+22031;de:08215:1855;R;Karlsruhe - Odenheim;5
+22031;de:08215:1856;R;Karlsruhe - Odenheim;6
+22031;de:08215:1857;R;Karlsruhe - Odenheim;7
+22031;de:08215:1858;R;Karlsruhe - Odenheim;8
+22031;de:08215:31002;R;Karlsruhe - Odenheim;9
+22031;de:08215:32603;R;Karlsruhe - Odenheim;10
+22031;de:08215:31004;R;Karlsruhe - Odenheim;11
+22031;de:08215:32554;R;Karlsruhe - Odenheim;12
+22031;de:08215:31005;R;Karlsruhe - Odenheim;13
+22031;de:08215:3185;R;Karlsruhe - Odenheim;14
+22031;de:08215:31007;R;Karlsruhe - Odenheim;15
+22031;de:08215:31008;R;Karlsruhe - Odenheim;16
+22032;de:08212:90;R;Karlsruhe - Menzingen;1
+22032;de:08212:801;R;Karlsruhe - Menzingen;2
+22032;de:08215:1853;R;Karlsruhe - Menzingen;3
+22032;de:08215:1854;R;Karlsruhe - Menzingen;4
+22032;de:08215:1855;R;Karlsruhe - Menzingen;5
+22032;de:08215:1856;R;Karlsruhe - Menzingen;6
+22032;de:08215:1857;R;Karlsruhe - Menzingen;7
+22032;de:08215:1858;R;Karlsruhe - Menzingen;8
+22032;de:08215:31002;R;Karlsruhe - Menzingen;9
+22032;de:08215:32001;R;Karlsruhe - Menzingen;10
+22032;de:08215:32002;R;Karlsruhe - Menzingen;11
+22032;de:08215:32003;R;Karlsruhe - Menzingen;12
+22032;de:08215:32004;R;Karlsruhe - Menzingen;13
+22032;de:08215:32005;R;Karlsruhe - Menzingen;14
+22032;de:08215:32006;R;Karlsruhe - Menzingen;15
+22032;de:08215:32007;R;Karlsruhe - Menzingen;16
+22032;de:08215:32008;R;Karlsruhe - Menzingen;17
+22032;de:08215:32009;R;Karlsruhe - Menzingen;18
+22051;de:07334:32637;R;Germersheim - Pforzheim;1
+22051;de:07334:1748;R;Germersheim - Pforzheim;2
+22051;de:07334:1747;R;Germersheim - Pforzheim;3
+22051;de:07334:35002;R;Germersheim - Pforzheim;4
+22051;de:07334:1746;R;Germersheim - Pforzheim;5
+22051;de:07334:32660;R;Germersheim - Pforzheim;6
+22051;de:07334:32451;R;Germersheim - Pforzheim;7
+22051;de:07334:1745;R;Germersheim - Pforzheim;8
+22051;de:07334:35003;R;Germersheim - Pforzheim;9
+22051;de:07334:1744;R;Germersheim - Pforzheim;10
+22051;de:07334:1743;R;Germersheim - Pforzheim;11
+22051;de:07334:35004;R;Germersheim - Pforzheim;12
+22051;de:07334:1741;R;Germersheim - Pforzheim;13
+22051;de:07334:1731;R;Germersheim - Pforzheim;14
+22051;de:07334:1723;R;Germersheim - Pforzheim;15
+22051;de:07334:1721;R;Germersheim - Pforzheim;16
+22051;de:08212:107;R;Germersheim - Pforzheim;17
+22051;de:08212:106;R;Germersheim - Pforzheim;18
+22051;de:08212:105;R;Germersheim - Pforzheim;19
+22051;de:08212:104;R;Germersheim - Pforzheim;20
+22051;de:08212:103;R;Germersheim - Pforzheim;21
+22051;de:08212:101;R;Germersheim - Pforzheim;22
+22051;de:08212:58;R;Germersheim - Pforzheim;23
+22051;de:08212:51;R;Germersheim - Pforzheim;24
+22051;de:08212:45;R;Germersheim - Pforzheim;25
+22051;de:08212:44;R;Germersheim - Pforzheim;26
+22051;de:08212:41;R;Germersheim - Pforzheim;27
+22051;de:08212:39;R;Germersheim - Pforzheim;28
+22051;de:08212:1004;R;Germersheim - Pforzheim;29
+22051;de:08212:1003;R;Germersheim - Pforzheim;30
+22051;de:08212:1002;R;Germersheim - Pforzheim;31
+22051;de:08212:1001;R;Germersheim - Pforzheim;32
+22051;de:08212:6;R;Germersheim - Pforzheim;33
+22051;de:08212:7;R;Germersheim - Pforzheim;34
+22051;de:08212:9;R;Germersheim - Pforzheim;35
+22051;de:08212:10;R;Germersheim - Pforzheim;36
+22051;de:08212:802;R;Germersheim - Pforzheim;37
+22051;de:08212:1510;R;Germersheim - Pforzheim;38
+22051;de:08212:1521;R;Germersheim - Pforzheim;39
+22051;de:08212:1525;R;Germersheim - Pforzheim;40
+22051;de:08212:1600;R;Germersheim - Pforzheim;41
+22051;de:08215:1601;R;Germersheim - Pforzheim;42
+22051;de:08215:2008;R;Germersheim - Pforzheim;43
+22051;de:08215:1634;R;Germersheim - Pforzheim;44
+22051;de:08215:1616;R;Germersheim - Pforzheim;45
+22051;de:08215:1617;R;Germersheim - Pforzheim;46
