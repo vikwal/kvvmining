@@ -9,7 +9,7 @@ import pandas as pd
 from dfeditm import dfedit
 from sqlalchemy import create_engine
 
-root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_0426.db'
+root = ''
 
 df = dfedit.df_edit(root)
 df_lines = df.dropna(subset=['start_ist', 'end_ist', 'Linie', 'StartSeq', 'EndSeq'])
