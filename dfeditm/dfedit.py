@@ -1,47 +1,47 @@
 import streamlit as st
 import pandas as pd
-from sqlalchemy import create_engine
+import numpy as np
+from sqlalchemy import create_engine, desc
 
 #Erstellt einen Dataframe aus einem sqlite database file
+@st.cache
 def create_df(table, root):
   engine = create_engine('sqlite:///' + root)
-  df = pd.read_sql(table, engine)                              
+  df = pd.read_sql(table, engine)
+  df.loc[(df.Linie == None),'Linie'] = 'Sonstige'                              
   return df
 
-#Funktion, die einem großen Dataframe erstellt, aus den Tabellen der Datenbank
+#Funktion, die DataFrame für die Karte erstellt
+def create_map(df, table, zeitfilter, root, date, day, line_choice, stop_choice):
+  if zeitfilter == 'Datum': df = df[df['Datum'].isin(date)]
+  else: df = df[df['Wochentag'].isin(day)]
+  df = df[df['Linie'].isin(line_choice)]
+  df = df[df['Haltestelle_Ort'].isin(stop_choice)]
+  if table == 'Fahrtanfragen_avg': df = df.groupby(['Haltestelle_Ort']).mean()
+  else: df = df.groupby(['Haltestelle_Ort']).median()
+  df.index.name = 'Haltestelle_Ort'
+  df = df.reset_index()
+  df['Verspätung_in_Sekunden'] = df['Verspätung_in_Sekunden'].round(0)
+  df_result = df.sort_values(by=['Verspätung_in_Sekunden'], ascending=False)
+  return df_result
+
+#Funktion, die DataFrame für Histogramm erstellt
+def create_hist(df, table, zeitfilter, root, date, day, line_choice, stop_choice):
+  if zeitfilter == 'Datum': df = df[df['Datum'].isin(date)]
+  else: df = df[df['Wochentag'].isin(day)]
+  df = df[df['Linie'].isin(line_choice)]
+  df = df[df['Haltestelle_Ort'].isin(stop_choice)]
+  if table == 'Fahrtanfragen_avg': df = df.groupby(['Stunde_des_Tages']).mean()
+  else: df = df.groupby(['Stunde_des_Tages']).median()
+  df = df.drop(['lng', 'lat'], axis=1)
+  df = df.round(0)
+  df_result = df.reset_index()
+  return df_result
+
+#Funktion, die ein Numpy Array aus Haltestellen erstellt
 @st.cache
-def df_edit(root):
-    #Zuerst erstellt man aus allen Tabellen der Datenbank jeweils einen Dataframe
-    df0 = create_df('Fahrtanfragen', root)
-    dflines = create_df('Linien', root)
-    dfroute = create_df('RouteStops', root)
-    dfstops = create_df('stopPointList', root)
-    #Dann werden die Dataframes bearbeitet
-    start_delay = (df0['start_ist'] - df0['start_soll']).dt.total_seconds()
-    end_delay = (df0['end_ist'] - df0['end_soll']).dt.total_seconds()
-    dflines = dflines.drop(['StartID', 'EndID'], axis = 1)
-    dfroute1 = dfroute.rename(columns={'Station': "start"})
-    dfroute1['Direction'] = dfroute1['Direction'].str.split('-').str[-1]
-    dfroute1 = dfroute1.drop_duplicates(subset=['start', 'line_ref','route'])
-    dfroute2 = dfroute.rename(columns={'Station': "end"})
-    dfroute2['Direction'] = dfroute2['Direction'].str.split('-').str[-1]
-    dfroute2 = dfroute2.drop_duplicates(subset=['end', 'line_ref','route'])
-    dfstops1 = dfstops.rename(columns={'Station': "start"})
-    dfstops1['StopPointName'] = dfstops1['StopPointName'] + ", " + dfstops1['LocationName']
-    dfstops1 = dfstops1.drop(['LocationName'], axis=1)
-    dfstops2 = dfstops.rename(columns={'Station': "end"})
-    dfstops2['StopPointName'] = dfstops2['StopPointName'] + ", " + dfstops2['LocationName']
-    dfstops2 = dfstops2.drop(['LocationName'], axis=1)
-    #Verbinden der Dataframes zu einem großen sowie Umbenennung der Spalten, falls nötig
-    df = pd.concat([df0, start_delay, end_delay], axis=1)
-    df = df.rename(columns={0: "start_delay", 1: "end_delay"})
-    df = pd.merge(df, dflines, on='line_ref', how='left')
-    df = pd.merge(df, dfroute1, on=['start', 'line_ref','route'], how='left')
-    df = df.rename(columns={'StopSeq': "StartSeq"})
-    df = pd.merge(df, dfroute2, on=['end', 'line_ref','route', 'Direction'], how='left')
-    df = df.rename(columns={'StopSeq': "EndSeq"})
-    df = pd.merge(df, dfstops1, on='start', how='left')
-    df = df.rename(columns={'StopPointName': 'StartName', 'Longitude': 'StartLong', 'Latitude': 'StartLat'})
-    df = pd.merge(df, dfstops2, on='end', how='left')
-    df = df.rename(columns={'StopPointName': 'EndName', 'Longitude': 'EndLong', 'Latitude': 'EndLat'})
-    return df
+def create_stoplist(root):
+  df = create_df('Fahrtanfragen_avg', root)
+  df = df['Haltestelle_Ort'].unique()
+  arr = np.sort(df)
+  return arr

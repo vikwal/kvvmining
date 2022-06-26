@@ -2,11 +2,11 @@ from .crawler import umlaute_formate
 
 class Haltestelle():
     def __init__(self, stopPointRef, stopPointName, locationName, longitude, latitude):
-        self.stopPointRef = stopPointRef
-        self.stopPointName = stopPointName
-        self.locationName = locationName
-        self.longitude = longitude
-        self.latitude = latitude
+        self.stopPointRef = stopPointRef    # String
+        self.stopPointName = stopPointName  # String
+        self.locationName = locationName    # String
+        self.longitude = longitude          # float
+        self.latitude = latitude            # float
         
     def haltestellen_erstellen(root):
         haltestellen = []

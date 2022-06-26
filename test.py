@@ -1,18 +1,14 @@
 import pandas as pd
-from sqlalchemy import create_engine
 from dfeditm import dfedit
-import plost
+from sqlalchemy import create_engine
+import numpy as np
+import pydeck as pdk
 
-root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_0421.db'
+root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_0519.db'
 
-df = dfedit.df_edit(root)
+df = dfedit.create_df('stopPointList', root)
+df_points = df.drop(['StopPointName', 'LocationName'], axis=1)
+df_points = df_points.rename(columns={'Longitude': 'lon', 'Latitude': 'lat'})
+midpoint = (np.average(df_points['lat']), np.average(df_points['lon']))
 
-#df1 = df.filter(items=['start', 'start_delay'])
-df['Direction'] = df['Direction'].str.split('-').str[-1]
-print(df['Direction'])
-
-# plost.line_chart(
-#     df,
-#     x='start_dela'
-#     y='start_delay'
-# )
+print(midpoint[0])

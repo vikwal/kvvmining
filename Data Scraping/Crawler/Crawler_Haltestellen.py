@@ -15,7 +15,6 @@ xml = """<?xml version="1.0" encoding="UTF-8"?>
                         </InitialInput>
                         <Restrictions>
                             <IncludePtModes>false</IncludePtModes>
-                            <IncludeLongitudes>true</IncludeLongitudes>
                         </Restrictions>
                     </LocationInformationRequest>
                 </RequestPayload>

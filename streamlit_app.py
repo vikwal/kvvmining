@@ -3,79 +3,142 @@
 Bahnmining am Beispiel des lokalen Nahverkerhs in Karlsruhe
 """
 
-from operator import index
 import streamlit as st
 import pandas as pd
 from dfeditm import dfedit
-from sqlalchemy import create_engine
+import numpy as np
+import pydeck as pdk
+import altair as alt
+from datetime import datetime, timedelta
 
-root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_0426.db'
-
-df = dfedit.df_edit(root)
-df_lines = df.dropna(subset=['start_ist', 'end_ist', 'Linie', 'StartSeq', 'EndSeq'])
-df_all_lines = df.dropna(subset=['start_ist', 'end_ist'])
+#Pfad zur Datenbank
+root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_streamlit.db'
 
 st.title('**KVV Mining Dashboard**')
+st.write('Das KVV Mining Dashboard ermöglicht einen Einblick in historische Daten zu Pünktlichkeit an Haltestellen und Linien im KVV')
+st.write('Folgende Einschränkungen wurden im Rahmen der Datenerhebung gemacht:')
+lst = ['Es wurden nur zu folgenden Linien Daten ausgewertet: 1, 2, 3, 4, 5, S1, S10, S11, S12, S2, S4, S5, S51, S31, S32. Vereinzelte Sonderlinien (nicht alle) sind als Sonstige aufgeführt.',
+       'Es wurden nur die Haltestellen betrachtet, die regulär von den ausgewählten Linien befahren werden.',
+       'Die Pünktlichkeit einer Haltestelle ist nur von den ausgewählten Linien abhängig, auch wenn die Haltestelle noch von Bussen oder anderen Linien befahren wird.',
+       'Bei der Verspätung handelt es sich um eine verspätete Abfahrt von der Haltestelle. Die verspätete Ankunft kann näherungsweise gleichgesetzt werden.',
+       'Fahrtausfälle werden nicht berücksichtigt und gehen somit auch nicht in die Statistik mit ein.']
+s = ''
+for i in lst:
+    s += '- ' + i + '\n'
+st.markdown(s)
+st.write('___')
 
-#df = dfedit.create_df('Fahrtanfragen', st.secrets['root'])
+#Liste erstellen mit Haltestellen
+df_stops = dfedit.create_stoplist(root)
+#Datetime-Objekt von gestrigem Tag erstellen
+yesterday = (datetime.today() - timedelta(days=1)).date()
 
-#Select period
-st.sidebar.write('**Select period**')
-d_start = st.sidebar.date_input('From:')
-d_end = st.sidebar.date_input('To:')
-st.sidebar.write('')
-#Select tramway
-st.sidebar.write('**Select tramway**')
+## Sidebar
+st.sidebar.title('_Parametrisieren_')
+st.sidebar.write('___')
+#Lageparameter auswählen
+st.sidebar.write('**Lagerparameter auswählen**')
+lageparameter = st.sidebar.radio('Lageparameter:', ('Arithmetisches Mittel', 'Median'))
+if lageparameter == 'Median': 
+    table = 'Fahrtanfragen_med'
+    #Ungefilterten Dataframe in Zwischenspeicher laden
+    df = dfedit.create_df(table, root) 
+else: 
+    table = 'Fahrtanfragen_avg'
+    #Ungefilterten Dataframe in Zwischenspeicher laden
+    df = dfedit.create_df(table, root)
+st.sidebar.write('___')
+#Zeit(raum)filter setzen
+st.sidebar.write('**Filter nach Datum bzw. Wochentag auswählen**')
+zeitfilter = st.sidebar.radio('Zeitfilter:', ('Datum', 'Wochentag'))
+st.sidebar.write('___')
+#Datum auswählen
+if zeitfilter == 'Datum': 
+    st.sidebar.write('**Datum auswählen**')
+    all_date = st.sidebar.checkbox('Gesamten Zeitraum anzeigen', value=True)
+    date = [0]
+    if all_date: 
+        date = df['Datum'].apply(lambda x: x.strftime('%Y-%m-%d')).unique()
+        date_input_disabled =  st.sidebar.date_input('Datum:' , None, disabled=True)
+    else: date[0] = st.sidebar.date_input('Datum:', yesterday)
+    day = ''
+#Wochentag auswählen
+else:
+    st.sidebar.write('**Wochentage auswählen**')
+    all_week = st.sidebar.checkbox('Alle Tage auswählen', value=True)
+    container_day = st.sidebar.container()
+    if all_week: day = container_day.multiselect('Wochentage:', ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'], ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'])
+    else: day = container_day.multiselect('Wochentage:', ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'])
+    date = ''
+st.sidebar.write('___')
+#Tram/S-Bahn Linie auswählen
+st.sidebar.write('**Tram/S-Bahn auswählen**')
+all_lines = st.sidebar.checkbox('Alle Linien auswählen', value=True)
 container_line = st.sidebar.container()
-all_lines = st.sidebar.checkbox('Select all lines')
-if all_lines: line_choice = container_line.multiselect('Line:', df_lines['Linie'].drop_duplicates().sort_values(), df_lines['Linie'].drop_duplicates().sort_values())
-else: line_choice = container_line.multiselect('Line:', df_lines['Linie'].drop_duplicates().sort_values())
+Sonstige = None
+if all_lines: line_choice = container_line.multiselect('Linien:', ['1','2','3','4','5','S1','S10','S11','S12','S2','S4','S5','S51','S31','S32', 'Sonstige'], ['1','2','3','4','5','S1','S10','S11','S12','S2','S4','S5','S51','S31','S32', 'Sonstige'])
+else: line_choice = container_line.multiselect('Linien:', ['1','2','3','4','5','S1','S10','S11','S12','S2','S4','S5','S51','S31','S32', 'Sonstige'])
+st.sidebar.write('___')
+#Haltestelle auswählen
+st.sidebar.write('**Haltestellen auswählen**')
+all_stops = st.sidebar.checkbox('Alle Haltestellen auswählen', value=True)
+container_stop = st.sidebar.container()
+if all_stops: stop_choice = container_stop.multiselect('Haltestelle:', df_stops, df_stops)
+else: stop_choice = container_stop.multiselect('Haltestelle:', df_stops)
 st.sidebar.write('')
-#Select bay
-st.sidebar.write('**Select bay**')
-u_bahn = st.sidebar.checkbox('U-Bahn')
-o_bahn = st.sidebar.checkbox('O-Bahn')
-#if u_bahn: 
-#if o_bahn:
 
-#Tabelle mit gefilterten Rohdaten
-df_lines['start_delay'] = df_lines['start_delay'].astype('int')
-df_lines['end_delay'] = df_lines['end_delay'].astype('int')
-df_lines['StartSeq'] = df_lines['StartSeq'].astype('int')
-df_lines['EndSeq'] = df_lines['EndSeq'].astype('int')
-st.dataframe(df_lines[['StartName', 'EndName', 'start_soll', 'start_ist', 'end_soll', 'end_ist', 'start_delay', 'end_delay', 'start_bay', 'end_bay', 'Linie', 'Direction', 'StartSeq', 'EndSeq', 'pt_mode']])
-st.write('Found ' + format(df_lines.shape[0], ',d') + ' records') 
+#Dataframes erzeugen
+df_map = dfedit.create_map(df, table, zeitfilter, root, date, day, line_choice, stop_choice)
+df_hist = dfedit.create_hist(df, table, zeitfilter, root, date, day, line_choice, stop_choice)
 
-#Delay overall
-st.write('**Delay overall**')
-st.write('Delay of all lines, independent from period of time')
-delay_all = df_all_lines[
-(df_all_lines['start_ist'] > pd.to_datetime(d_start)) & 
-(df_all_lines['start_ist'] < pd.to_datetime(d_end))][['start_ist', 'StartName', 'EndName','start_delay', 'Linie', 'start_bay', 'end_bay']]
-df_delay_overall = delay_all.groupby(delay_all['start_ist'].dt.date).mean()
-df_delay_overall = df_delay_overall.rename(columns={'start_delay': 'delay'})
-st.line_chart(df_delay_overall)
-st.write('Average delay for all lines from ' + str(d_start) + ' to ' + str(d_end) + ' : ' + str(df_delay_overall['delay'].mean().astype('int')) + ' seconds')
+#Tabelle mit Haltestellen und durchschnittlicher Verspätung
+st.write('**Tabelle mit Verspätungen im ausgewählten Zeitraum an Haltestellen, die von den ausgewählten Linien befahren werden*, absteigend sortiert nach der größten Verspätung*')
+st.dataframe(df_map[['Haltestelle_Ort', 'Verspätung_in_Sekunden']].style.set_precision(0))
+st.write('___')
 
-#Delay per line
-st.write('**Delay per line**')
-c = 0
-df0 = df_lines.groupby([df_lines['start_ist'].dt.date]).mean().index.to_frame()
-df0 = df0.rename(columns={'start_ist': 'date'})
-for i in line_choice:
-    delay_line = df_lines[
-    (df_lines['Linie'].isin(list(i))) &
-    (df_lines['start_ist'] > pd.to_datetime(d_start)) & 
-    (df_lines['start_ist'] < pd.to_datetime(d_end))].groupby([df_lines['start_ist'].dt.date]).mean()
-    delay_line = delay_line.rename(columns={'start_delay': i})
-    df1 = delay_line[i]
-    df0 = df0.join(df1)
-df0 = df0.drop(['date'], axis=1)
-df_mean = df0.copy()
-df_mean['index'] = 1
-df_mean = df_mean.groupby(['index']).mean().round(1)
-df_mean = df_mean.rename(index = {1: 'avg(delay)'})
+#Karte mit Haltestellen
+st.write('**Karte mit Haltestellen, die von den ausgewählten Linien angefahren werden**')
+st.write('Je höher der Balken, desto höher die Verspätung bzw. je dunkler der Balken, desto geringer die Verspätung.')
 
-st.line_chart(df0)
-st.write('Average delay in seconds per line for selected period:')
-st.dataframe(df_mean.style.format('{:.0f}'))
+st.pydeck_chart(pdk.Deck(
+    map_provider='mapbox',
+    map_style='mapbox://styles/mapbox/streets-v11',
+    tooltip={
+        "html": "An der Haltestelle <b>{Haltestelle_Ort}</b>, fährt die Bahn mit <b>{Verspätung_in_Sekunden}</b> Sekunden Verspätung ab.",
+        "style": {"background": "grey", "color": "white", "font-family": '"Helvetica Neue", Arial', "z-index": "10000"},
+    },
+    initial_view_state=pdk.ViewState(
+        latitude=49.0097,
+        longitude=8.4024,
+        pitch=45
+    ),
+    layers=[
+        pdk.Layer(
+            "ColumnLayer",
+            data=df_map,
+            get_position=['lng', 'lat'],
+            get_elevation = "Verspätung_in_Sekunden",
+            elevation_scale=10,
+            radius=100,
+            get_fill_color=["Verspätung_in_Sekunden * 2.2", "Verspätung_in_Sekunden * 0.1", "Verspätung_in_Sekunden * 5", 140],
+            #elevation_range=[0, 500],
+            pickable=True,
+            #extruded=True,
+            auto_highlight=True,
+        )
+    ]
+))
+st.write('___')
+
+#Historgamm über durchschnittliche Verspätung im Tagesverlauf
+st.write('**Verspätung in Sekunden im Tagesverlauf für den ausgewählten Zeitraum**')
+
+bar_chart = alt.Chart(df_hist).mark_bar().encode(
+    x=alt.X('Stunde_des_Tages', scale=alt.Scale(domain=[1,22]), title='Stunde eines Tages'),
+    y=alt.Y('Verspätung_in_Sekunden', sort='ascending', title='Verspätung in Sekunden')
+)
+st.altair_chart(bar_chart, use_container_width=True)
+
+st.write('___')
+
+st.write('Data Science project by Viktor Walter at Hochschule Karlsruhe - University of Applied Sciences (HKA)')

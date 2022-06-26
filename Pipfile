@@ -8,6 +8,8 @@ sqlalchemy = "*"
 streamlit = "*"
 plost = "*"
 plotly = "*"
+pydeck = "*"
+altair = "*"
 
 [dev-packages]
 

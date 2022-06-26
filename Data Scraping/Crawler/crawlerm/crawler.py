@@ -89,11 +89,12 @@ def datetime_api_toString(datetime):
 
 # Funktion, die aus einer CSV-Datei eine Liste mit Haltestellen-Tupeln erstellt
 def haltepaare_erstellen(haltePaare):
-    pa = pd.read_csv(haltePaare)
+    pa = pd.read_csv(haltePaare) #Hier evtl. delimiter = ';' setzen?
     pa.head()
     paar1 = []
     paar2 = []
 
+    #Funktion evtl. umbauen / Funktion in Funktion irgendwie nicht gut
     def merge2(list1, list2):
         merged_list = [(list1[i], list2[i]) for i in range(0, len(list1))]
         return merged_list
@@ -201,9 +202,9 @@ def crawler_function(date, arr):
     
     for req in arr:
         start = req[0]
-        ziel = req[1]
+        end = req[1]
 
-        root = request(start, ziel, date)
+        root = request(start, end, date)
 
         try:
             intch = root[0][5][0][1][1][4].text
@@ -211,15 +212,13 @@ def crawler_function(date, arr):
         except:
             continue
         try:
-            start = root[0][5][0][1][1][6][1][0][0].text
+            start0 = root[0][5][0][1][1][6][1][0][0].text
         except:
-            start = None
             continue
         try:
-            end = root[0][5][0][1][1][6][1][1][0].text
+            end0 = root[0][5][0][1][1][6][1][1][0].text
         except:
-            end = None
-
+            continue
         try:
             x = root[0][5][0][1][1][6][1][0][2][0].text
             if len(x) < 15:
@@ -294,9 +293,9 @@ def crawler_function(date, arr):
     
     for req in arr:
         start = req[1]
-        ziel = req[0]
+        end = req[0]
 
-        root = request(start, ziel, date)
+        root = request(start, end, date)
 
         try:
             intch = root[0][5][0][1][1][4].text
@@ -304,15 +303,13 @@ def crawler_function(date, arr):
         except:
             continue
         try:
-            start = root[0][5][0][1][1][6][1][0][0].text
+            start0 = root[0][5][0][1][1][6][1][0][0].text
         except:
-            start = None
             continue
         try:
-            end = root[0][5][0][1][1][6][1][1][0].text
+            end0 = root[0][5][0][1][1][6][1][1][0].text
         except:
-            end = None
-
+            continue
         try:
             x = root[0][5][0][1][1][6][1][0][2][0].text
             if len(x) < 15: 
