@@ -11,16 +11,8 @@ import pydeck as pdk
 import altair as alt
 from datetime import datetime, timedelta
 
-<<<<<<< HEAD
 #Pfad zur Datenbank
-root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_streamlit.db'
-=======
 root = ''
-
-df = dfedit.df_edit(root)
-df_lines = df.dropna(subset=['start_ist', 'end_ist', 'Linie', 'StartSeq', 'EndSeq'])
-df_all_lines = df.dropna(subset=['start_ist', 'end_ist'])
->>>>>>> f0d36ad0124020b5adfc2c3366b41f319c83a048
 
 st.title('**KVV Mining Dashboard**')
 st.write('Das KVV Mining Dashboard ermöglicht einen Einblick in historische Daten zu Pünktlichkeit an Haltestellen und Linien im KVV')
