@@ -12,7 +12,7 @@ def create_df(table, root):
   return df
 
 #Funktion, die DataFrame für die Karte erstellt
-def create_map(df, table, zeitfilter, root, date, day, line_choice, stop_choice):
+def create_map(df, table, zeitfilter, date, day, line_choice, stop_choice):
   if zeitfilter == 'Datum': df = df[df['Datum'].isin(date)]
   else: df = df[df['Wochentag'].isin(day)]
   df = df[df['Linie'].isin(line_choice)]
@@ -25,8 +25,8 @@ def create_map(df, table, zeitfilter, root, date, day, line_choice, stop_choice)
   df_result = df.sort_values(by=['Verspätung_in_Sekunden'], ascending=False)
   return df_result
 
-#Funktion, die DataFrame für Histogramm erstellt
-def create_hist(df, table, zeitfilter, root, date, day, line_choice, stop_choice):
+#Funktion, die DataFrame für Historgamm erstellt
+def create_hist(df, table, zeitfilter, date, day, line_choice, stop_choice):
   if zeitfilter == 'Datum': df = df[df['Datum'].isin(date)]
   else: df = df[df['Wochentag'].isin(day)]
   df = df[df['Linie'].isin(line_choice)]

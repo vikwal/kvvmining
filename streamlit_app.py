@@ -12,7 +12,7 @@ import altair as alt
 from datetime import datetime, timedelta
 
 #Pfad zur Datenbank
-root = ''
+root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_streamlit.db'
 
 st.title('**KVV Mining Dashboard**')
 st.write('Das KVV Mining Dashboard ermöglicht einen Einblick in historische Daten zu Pünktlichkeit an Haltestellen und Linien im KVV')
@@ -21,7 +21,8 @@ lst = ['Es wurden nur zu folgenden Linien Daten ausgewertet: 1, 2, 3, 4, 5, S1, 
        'Es wurden nur die Haltestellen betrachtet, die regulär von den ausgewählten Linien befahren werden.',
        'Die Pünktlichkeit einer Haltestelle ist nur von den ausgewählten Linien abhängig, auch wenn die Haltestelle noch von Bussen oder anderen Linien befahren wird.',
        'Bei der Verspätung handelt es sich um eine verspätete Abfahrt von der Haltestelle. Die verspätete Ankunft kann näherungsweise gleichgesetzt werden.',
-       'Fahrtausfälle werden nicht berücksichtigt und gehen somit auch nicht in die Statistik mit ein.']
+       'Fahrtausfälle werden nicht berücksichtigt und gehen somit auch nicht in die Statistik mit ein.',
+       'Beginn der Datenerhebung: 10.04.2022']
 s = ''
 for i in lst:
     s += '- ' + i + '\n'
@@ -88,8 +89,8 @@ else: stop_choice = container_stop.multiselect('Haltestelle:', df_stops)
 st.sidebar.write('')
 
 #Dataframes erzeugen
-df_map = dfedit.create_map(df, table, zeitfilter, root, date, day, line_choice, stop_choice)
-df_hist = dfedit.create_hist(df, table, zeitfilter, root, date, day, line_choice, stop_choice)
+df_map = dfedit.create_map(df, table, zeitfilter, date, day, line_choice, stop_choice)
+df_hist = dfedit.create_hist(df, table, zeitfilter, date, day, line_choice, stop_choice)
 
 #Tabelle mit Haltestellen und durchschnittlicher Verspätung
 st.write('**Tabelle mit Verspätungen im ausgewählten Zeitraum an Haltestellen, die von den ausgewählten Linien befahren werden*, absteigend sortiert nach der größten Verspätung*')
@@ -119,11 +120,10 @@ st.pydeck_chart(pdk.Deck(
             get_position=['lng', 'lat'],
             get_elevation = "Verspätung_in_Sekunden",
             elevation_scale=10,
-            radius=100,
+            radius=80,
             get_fill_color=["Verspätung_in_Sekunden * 2.2", "Verspätung_in_Sekunden * 0.1", "Verspätung_in_Sekunden * 5", 140],
             #elevation_range=[0, 500],
             pickable=True,
-            #extruded=True,
             auto_highlight=True,
         )
     ]
