@@ -12,7 +12,7 @@ import altair as alt
 from datetime import datetime, timedelta
 
 #Pfad zur Datenbank
-root = '/Users/viktorwalter/Library/Mobile Documents/com~apple~CloudDocs/Studium/Wirtschaftsingenieurwesen B.Sc./8. Semester SS22/Thesis/Praxis/Database/database_streamlit.db'
+root = '/Database/database_streamlit.db'
 
 st.title('**KVV Mining Dashboard**')
 st.write('Das KVV Mining Dashboard ermöglicht einen Einblick in historische Daten zu Pünktlichkeit an Haltestellen und Linien im KVV')
