@@ -133,6 +133,8 @@ st.write('___')
 #Historgamm über durchschnittliche Verspätung im Tagesverlauf
 st.write('**Verspätung in Sekunden im Tagesverlauf in Abhängigkeit von ausgewählten Parametern**')
 
+df.dataframe(df_hist)
+
 bar_chart = alt.Chart(df_hist).mark_bar().encode(
     x=alt.X('Stunde_des_Tages', scale=alt.Scale(domain=[0,23]), title='Stunde eines Tages'),
     y=alt.Y('Verspätung_in_Sekunden', sort='ascending', title='Verspätung in Sekunden')
