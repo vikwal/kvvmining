@@ -6,8 +6,9 @@ from sqlalchemy import create_engine, desc
 #Erstellt einen Dataframe aus einem sqlite database file
 @st.cache
 def create_df(table, root):
-  engine = create_engine('sqlite:///' + root)
-  df = pd.read_sql(table, engine)
+  #engine = create_engine('sqlite:///' + root) #Auskommentiert, da Sample-Datensatz aus CSV eingelesen wird zu Demnonstrationszwecken
+  #df = pd.read_sql(table, engine)             #Auskommentiert, da Sample-Datensatz aus CSV eingelesen wird zu Demnonstrationszwecken
+  df = pd.read_csv(table)
   df.loc[(df.Linie == None),'Linie'] = 'Sonstige'                              
   return df
 
