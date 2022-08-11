@@ -134,7 +134,7 @@ st.write('___')
 st.write('**Verspätung in Sekunden im Tagesverlauf für den ausgewählten Zeitraum**')
 
 bar_chart = alt.Chart(df_hist).mark_bar().encode(
-    x=alt.X('Stunde_des_Tages', scale=alt.Scale(domain=[1,22]), title='Stunde eines Tages'),
+    x=alt.X('Stunde_des_Tages', scale=alt.Scale(domain=[0,23]), title='Stunde eines Tages'),
     y=alt.Y('Verspätung_in_Sekunden', sort='ascending', title='Verspätung in Sekunden')
 )
 st.altair_chart(bar_chart, use_container_width=True)
