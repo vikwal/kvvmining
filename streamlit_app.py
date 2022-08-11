@@ -22,7 +22,7 @@ lst = ['Es wurden nur zu folgenden Linien Daten ausgewertet: 1, 2, 3, 4, 5, S1, 
        'Die Pünktlichkeit einer Haltestelle ist nur von den ausgewählten Linien abhängig, auch wenn die Haltestelle noch von Bussen oder anderen Linien befahren wird.',
        'Bei der Verspätung handelt es sich um eine verspätete Abfahrt von der Haltestelle. Die verspätete Ankunft kann näherungsweise gleichgesetzt werden.',
        'Fahrtausfälle werden nicht berücksichtigt und gehen somit auch nicht in die Statistik mit ein.',
-       'Dieses Dashboard dient lediglich zur Anschauung bildet daher nur Daten ab für den Zeitraum: 18.05.2022 - 19.06.2022']
+       'Dieses Dashboard dient Anschauungszwecken und bildet daher nur Daten ab für den Zeitraum: 18.05.2022 - 19.06.2022']
 s = ''
 for i in lst:
     s += '- ' + i + '\n'
