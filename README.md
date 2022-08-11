@@ -6,7 +6,6 @@
 
 **Link zum Dashboard:**
 https://vikwal-kvvmining-streamlit-app-0bina6.streamlitapp.com/
-
 Das Dashboard dient zur Anschauung und bilder daher nur Daten ab, für den Zeitraum: 18.05.2022 - 19.06.2022.
 
 **API-KEY**
