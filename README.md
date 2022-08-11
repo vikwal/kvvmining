@@ -35,9 +35,6 @@ Dieser Ordner beinhaltet ein Programm zur Verarbeitung der generierten Rohdaten 
 **./Data Scraping/Database/SQL/Datentransporter.py**
 Dieses Python-Skript führt einen Datentransport aus, indem es Rohdaten als pandas-DataFrame einliest und diese bearbeitet. Die aufbereiteten Daten werden dann entweder auf die Datenbank *database_raw.db' oder 'database_streamlit.db* geschrieben. Einmal angestoßen läuft das Programm bis es beendet wird. Der eigentliche Datentransport findet nur alle 24 Stunden stat, wobei bei Tageswechsel die Daten des Vortages bearbeitet werden.
 
-**./Data Scraping/Database/SQL/Streckenabschnitte**
-Dieser Ordner enthält detaillierte Dokumente zu Linienverläufen.
-
 **./Data Scraping/dfeditm**
 '*dfeditm*' ist ein Modul und steht für 'dataframe edit module'. Es enthält wichtige Funktion, um pandas-DataFrames zu erstellen und zu bearbeiten.<br> Dieses Modul ist relevant für das Streamlit-Dashboard '*streamlit_app.py*'.
 
