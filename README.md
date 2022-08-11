@@ -22,7 +22,7 @@ Das Python-Skript *main.py* ist das ausführende Programm, welches automatisiert
 Hier liegen die relevanten SQLite Datenbankdateien, Tabellen sind angelegt, enthalten jedoch keine Daten. <br>
 1. *rawdata.db* - Datenbank, die Informationen zu jedem gestellten Request enthält.
 2. *database_raw.db* - Datenbank, die Informationen zur jeder einzelnen Fahrt beinhaltet
-3. *database_streamlit* - Datenbank, die gruppierte Daten enthält nach Durchschnitt und Median, relevant für Dashboard.
+3. *database_streamlit* - Datenbank, die gruppierte Daten enthält nach Durchschnitt und Median, relevant für Dashboard. <br>
 Die Granularität der vorliegenden Datenbanken sinkt von oben nach unten.
   
 **./Data Scraping/Database/HaltePaare**
