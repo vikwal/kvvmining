@@ -24,7 +24,7 @@ Hier liegen die relevanten SQLite Datenbankdateien, Tabellen sind angelegt, enth
 2. *database_raw.db* - Datenbank, die Informationen zur jeder einzelnen Fahrt beinhaltet
 3. *database_streamlit* - Datenbank, die gruppierte Daten enthält nach Durchschnitt und Median, relevant für Dashboard.
 
-Die Granularität der vorliegenden Datenbanken sinkt von oben nach unten.
+Die Granularität der Daten in den Datenbanken sinkt von oben nach unten.
   
 **./Data Scraping/Database/HaltePaare**
 Die hier gespeicherten CSV Dateien haben jeweils zwei Spalten und beinhalten Haltestellenpaare, wobei ein Haltestellenpaar aus zwei benachbarten Haltestellen besteht. Es handelt sich um 6 CSV-Dateien, da das *main.py* 6 parallellaufende Threads ausführt, weshalb jeder Thread eine eigene Liste mit Haltestellenpaaren benötigt. Diese Haltestellenpaare sind die Grundlage für die Requests. Ein Request wird für eine Zeile einer CSV-Datei ausgeführt, in dem der erste Wert des Tupels der Starthaltestellle und der zweite Wert der Endhaltestelle entspricht.
