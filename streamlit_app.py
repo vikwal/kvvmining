@@ -99,7 +99,7 @@ st.write('___')
 
 #Karte mit Haltestellen
 st.write('**Karte mit Haltestellen, die von den ausgewählten Linien angefahren werden**')
-st.write('Je höher der Balken, desto höher die Verspätung bzw. je dunkler der Balken, desto geringer die Verspätung.')
+st.write('Je höher die Säule, desto höher die Verspätung bzw. je dunkler die Säule, desto geringer die Verspätung.')
 
 st.pydeck_chart(pdk.Deck(
     map_provider='mapbox',
