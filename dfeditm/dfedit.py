@@ -9,6 +9,7 @@ def create_df(table, root):
   #engine = create_engine('sqlite:///' + root) #Auskommentiert, da Sample-Datensatz aus CSV eingelesen wird zu Demnonstrationszwecken
   #df = pd.read_sql(table, engine)             #Auskommentiert, da Sample-Datensatz aus CSV eingelesen wird zu Demnonstrationszwecken
   df = pd.read_csv(table)
+  df['Datum'] = pd.to_datetime(df['Datum'])
   df.loc[(df.Linie == None),'Linie'] = 'Sonstige'                              
   return df
 
