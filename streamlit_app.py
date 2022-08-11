@@ -92,6 +92,8 @@ st.sidebar.write('')
 df_map = dfedit.create_map(df, table, zeitfilter, date, day, line_choice, stop_choice)
 df_hist = dfedit.create_hist(df, table, zeitfilter, date, day, line_choice, stop_choice)
 
+st.write(df.Verspätung_in_Sekunden.sum())
+
 #Tabelle mit Haltestellen und durchschnittlicher Verspätung
 st.write('**Tabelle mit Verspätungen im ausgewählten Zeitraum an Haltestellen, die von den ausgewählten Linien befahren werden*, absteigend sortiert nach der größten Verspätung*')
 st.dataframe(df_map[['Haltestelle_Ort', 'Verspätung_in_Sekunden']].style.set_precision(0))
