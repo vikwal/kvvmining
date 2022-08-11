@@ -141,4 +141,4 @@ st.altair_chart(bar_chart, use_container_width=True)
 
 st.write('___')
 
-st.write('Data Science project by Viktor Walter at Hochschule Karlsruhe - University of Applied Sciences (HKA)')
+st.write('Data Science project at Hochschule Karlsruhe - University of Applied Sciences')
