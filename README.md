@@ -9,6 +9,9 @@ Das Dashboard dient zur Anschauung und bilder daher nur Daten ab, für den Zeitr
 **./Data Scraping**<br>
 Der Ordner *Data Scraping* enthält alle wichtigen Dateien zur Datenbeschaffung und Datenspeicherung von gescrapten Daten
 
+**./Data_Analysis_KVV/Data_Analysis_KVV.md**<br>
+Markdown-Datei eines Jupyter Notebooks zur Datenanalyse von gescrapten Daten des KVV (Betrachtungszeitraum 11.04.2022 - 16.08.2022)
+
 **./Data Scraping/Crawler**<br>
 Der Ordner *Crawler* enthält alle notwendigen Dateien zur Datenbeschaffung.
 
