@@ -99,7 +99,11 @@ st.write('___')
 
 #Karte mit Haltestellen
 st.write('**Karte mit Haltestellen, die von den ausgewählten Linien angefahren werden**')
-st.write('Je höher die Säule, desto höher die Verspätung bzw. je dunkler die Säule, desto geringer die Verspätung.')
+st.write('Hohe Säulen stehen für hohe Verspätung, niedrige Säulen stehen für geringe Verspätung')
+st.write('Farbschema der Säulen - Verspätung in Sekunden:')
+st.write('Grün < 60')
+st.write('Orange 60 - 120')
+st.write('Rot > 120')
 
 st.pydeck_chart(pdk.Deck(
     map_provider='mapbox',
