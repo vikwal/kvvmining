@@ -12,7 +12,7 @@ import altair as alt
 from datetime import datetime, timedelta
 
 #Pfad zur Datenbank
-root = '/Database/database_streamlit.db'
+root = './Database/database_streamlit.db'
 
 st.title('**KVV Mining Dashboard**')
 st.write('Das KVV Mining Dashboard ermöglicht einen Einblick in historische Daten zu Pünktlichkeit an Haltestellen und Linien im KVV')
@@ -120,8 +120,8 @@ st.pydeck_chart(pdk.Deck(
             get_position=['lng', 'lat'],
             get_elevation = "Verspätung_in_Sekunden",
             elevation_scale=10,
-            radius=80,
-            get_fill_color=["Verspätung_in_Sekunden * 2.2", "Verspätung_in_Sekunden * 0.1", "Verspätung_in_Sekunden * 5", 140],
+            radius=65,
+            get_fill_color=["Verspätung_in_Sekunden * 3", 145, "Verspätung_in_Sekunden * 1", 200],
             #elevation_range=[0, 500],
             pickable=True,
             auto_highlight=True,
@@ -134,7 +134,7 @@ st.write('___')
 st.write('**Verspätung in Sekunden im Tagesverlauf in Abhängigkeit von ausgewählten Parametern**')
 
 bar_chart = alt.Chart(df_hist).mark_bar().encode(
-    x=alt.X('Stunde_des_Tages', scale=alt.Scale(domain=[0,23]), title='Stunde eines Tages'),
+    x=alt.X('Stunde_des_Tages', scale=alt.Scale(domain=[1,23]), title='Stunde eines Tages'),
     y=alt.Y('Verspätung_in_Sekunden', sort='ascending', title='Verspätung in Sekunden')
 )
 st.altair_chart(bar_chart, use_container_width=True)
